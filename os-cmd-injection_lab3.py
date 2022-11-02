@@ -15,7 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 __author__ = 'Emanuele Rossi'
 __credits__ = ['cyb3rw0lf']
-__appName__ = 'Program Name'
+__appName__ = 'OS Command Injection LAB#3'
 __license__ = 'MIT'
 __version__ = '1.0.0-alpha'
 __appVers__ = '%s v%s' % (__appName__, __version__)
