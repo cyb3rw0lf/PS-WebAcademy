@@ -99,7 +99,7 @@ def main():
         logging.disable(logging.DEBUG)
     logging.info('Session Started')
 
-    url = args.u
+    url = args.u.strip(' /')
 
     banner = '''################################
 #          WebShell            #
@@ -119,8 +119,8 @@ def main():
                 print('       exit or quit    - Quit the application')
             case ['url', new_url]:
                 # Change target URL
-                print(f'Change target URL: {new_url}')
-                url = new_url
+                url = new_url.strip(' /')
+                print(f'Changed target URL: {url}')
                 continue
             case ['exit' | 'quit']:
                 # Exit / Quit the application
