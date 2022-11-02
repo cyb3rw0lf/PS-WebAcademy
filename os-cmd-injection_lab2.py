@@ -14,7 +14,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 proxies = {'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'}
 
 
-__author__ = 'Emanuele Rossi'
+__author__ = 'cyb3rw0lf'
 __credits__ = ['cyb3rw0lf']
 __appName__ = 'OS Command Injection LAB#2'
 __license__ = 'MIT'
