@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-__author__ = 'Emanuele Rossi'
+__author__ = 'cyb3rw0lf'
 __credits__ = ['cyb3rw0lf']
 __appName__ = 'OS Command Injection LAB#3'
 __license__ = 'MIT'
