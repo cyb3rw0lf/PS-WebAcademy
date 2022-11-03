@@ -15,7 +15,7 @@ proxies = {'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'}
 
 
 __appName__ = 'OS Command Injection LAB#2'
-__version__ = '1.0.0-alpha'
+__version__ = '1.0.0'
 __appVers__ = '%s v%s' % (__appName__, __version__)
 __usage__ = ('Perform OS Command Injection in Web Academy LAB #2')
 
