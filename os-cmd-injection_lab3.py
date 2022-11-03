@@ -13,15 +13,9 @@ from bs4 import BeautifulSoup
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-__author__ = 'cyb3rw0lf'
-__credits__ = ['cyb3rw0lf']
 __appName__ = 'OS Command Injection LAB#3'
-__version__ = '1.0.0-alpha'
+__version__ = '1.0.0'
 __appVers__ = '%s v%s' % (__appName__, __version__)
-__maintainer__ = 'cyb3rw0lf'
-__homepage__ = 'https://github.com/cyb3rw0lf/PS-WebAcademy'
-__email__ = 'w0lf.code@pm.me'
-__issues__ = 'https://github.com/cyb3rw0lf/PS-WebAcademy/issues'
 __usage__ = ('Perform OS Command Injection in Web Academy LAB #3')
 
 proxies = {'http': 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'}
