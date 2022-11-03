@@ -16,10 +16,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 __author__ = 'cyb3rw0lf'
 __credits__ = ['cyb3rw0lf']
 __appName__ = 'OS Command Injection LAB#3'
-__license__ = 'MIT'
 __version__ = '1.0.0-alpha'
 __appVers__ = '%s v%s' % (__appName__, __version__)
-__status__ = 'Test|Production'
 __maintainer__ = 'cyb3rw0lf'
 __homepage__ = 'https://github.com/cyb3rw0lf/PS-WebAcademy'
 __email__ = 'w0lf.code@pm.me'
